@@ -8,9 +8,9 @@ namespace mod6hw
 	{
 	public:
 		IElectronicDevice(string name);
+		IElectronicDevice() = default;
 		virtual string GetSpec() = 0;
 		virtual ~IElectronicDevice() = default;
-		string GetName();
 	protected:
 		string _modelName;
 		

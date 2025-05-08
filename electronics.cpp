@@ -4,8 +4,8 @@ namespace mod6hw
 {
 	IElectronicDevice::IElectronicDevice(string name) : _modelName(name) {}
 
-	string IElectronicDevice::GetName()
+	string IElectronicDevice::GetSpec()
 	{
-		return _modelName;
+		return "Устройство: " + _modelName + "\n";
 	}
 }

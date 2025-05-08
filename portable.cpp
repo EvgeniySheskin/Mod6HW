@@ -30,8 +30,7 @@ namespace mod6hw
 	}
 	string PortableDevice::GetSpec()
 	{
-		string spec = "\n";
-		spec += "Устройство: " + _modelName + "\n";
+		string spec = IElectronicDevice::GetSpec();
 		spec += "Вес: " + to_string(_weight) + " г\n";
 		if (_screenSize != 0)
 		{
