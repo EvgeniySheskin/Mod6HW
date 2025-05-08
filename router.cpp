@@ -7,9 +7,9 @@ namespace mod6hw
 
 
 
-	string Router::GetSpec()
+	string Router::GetSpec(bool showName)
 	{
-		string spec = ConsumerElectronics::GetSpec();
+		string spec = ConsumerElectronics::GetSpec(showName);
 		spec += "Количество антенн: " + to_string(_numberOfAntennas) + "\n";
 		spec += "Скорость передачи данных: " + to_string(_numberOfAntennas) + "\n";
 		spec += "\n";

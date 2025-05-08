@@ -7,7 +7,7 @@ namespace mod6hw
 	{
 	public:
 		PortableSpeaker(int weight, int capacity, int screenSize, string name, bool isWireless, int maxPower);
-		string GetSpec();
+		string GetSpec(bool showName);
 	private:
 		bool _isWireless;
 		int _maxPower;

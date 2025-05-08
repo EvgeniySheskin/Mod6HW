@@ -8,7 +8,7 @@ namespace mod6hw
 	public:
 		TV(string modelname, int ram, int drivespace, string processor, bool isSmartTv, int screenSize, int* resolution);
 		TV() = default;
-		string GetSpec();
+		string GetSpec(bool showName);
 	private:
 		bool _isSmartTv;
 		int _screenSize;

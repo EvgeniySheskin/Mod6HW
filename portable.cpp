@@ -28,9 +28,9 @@ namespace mod6hw
 		}
 		return output;
 	}
-	string PortableDevice::GetSpec()
+	string PortableDevice::GetSpec(bool showName)
 	{
-		string spec = IElectronicDevice::GetSpec();
+		string spec = IElectronicDevice::GetSpec(showName);
 		spec += "Вес: " + to_string(_weight) + " г\n";
 		if (_screenSize != 0)
 		{

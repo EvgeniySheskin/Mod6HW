@@ -8,7 +8,7 @@ namespace mod6hw
 	public:
 		PowerBank(int weight, int capacity, int screenSize, string name, DeviceInterface interface, int portsNunber, int outputCurrent);
 
-		string GetSpec();
+		string GetSpec(bool showName);
 	private:
 		DeviceInterface _interface;
 		int _numberOfPorts;

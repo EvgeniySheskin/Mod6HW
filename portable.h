@@ -16,7 +16,7 @@ namespace mod6hw
 	{
 	public:
 		PortableDevice(int weight, int capacity, int screenSize, string name);
-		string GetSpec();
+		string GetSpec(bool showName);
 		static string GetInterface(DeviceInterface interface);
 	private:
 		int _weight;

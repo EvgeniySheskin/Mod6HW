@@ -7,7 +7,7 @@ namespace mod6hw
 	{
 	public:
 		Router(string modelname, int ram, int drivespace, string processor, int numberOfAntennas, int maxSpeed);
-		string GetSpec();
+		string GetSpec(bool showName);
 	private:
 		int _numberOfAntennas;
 		int _maxSpeed;

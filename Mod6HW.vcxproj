@@ -134,6 +134,7 @@
     <ClCompile Include="portable_speaker.cpp" />
     <ClCompile Include="power_bank.cpp" />
     <ClCompile Include="router.cpp" />
+    <ClCompile Include="tablet.cpp" />
     <ClCompile Include="tv.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +144,7 @@
     <ClInclude Include="portable_speaker.h" />
     <ClInclude Include="power_bank.h" />
     <ClInclude Include="router.h" />
+    <ClInclude Include="tablet.h" />
     <ClInclude Include="tv.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

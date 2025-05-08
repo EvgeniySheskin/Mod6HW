@@ -7,7 +7,7 @@ namespace mod6hw
 	{
 	public:
 		ConsumerElectronics(string modelname, int ram, int drivespace, string processor);
-		string GetSpec();
+		string GetSpec(bool showName);
 	protected:
 		int _ram;
 		int _driveSpace;
