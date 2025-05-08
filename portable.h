@@ -3,15 +3,24 @@
 
 namespace mod6hw
 {
+	enum DeviceInterface
+	{
+		MINI_USB,
+		MICRO_USB,
+		TYPE_C,
+		LIGHTNING,
+		USB
+	};
 
 	class PortableDevice : public IElectronicDevice
 	{
 	public:
-		PortableDevice(int weight, int displaySize, int thickness, string name);
+		PortableDevice(int weight, int capacity, int screenSize, string name);
 		string GetSpec();
+		static string GetInterface(DeviceInterface interface);
 	private:
 		int _weight;
-		int _displaySize;
-		int _thickness;
+		int _capacity;
+		int _screenSize;
 	};
 }

@@ -13,9 +13,7 @@ namespace mod6hw
 		string GetName();
 	protected:
 		string _modelName;
-		int _ram;
-		int _driveSpace;
-		string _processor;
+		
 	};
 }
 

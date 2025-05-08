@@ -24,6 +24,12 @@
     <ClCompile Include="portable.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="consumer.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="power_bank.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="electronics.h">
@@ -32,7 +38,10 @@
     <ClInclude Include="portable.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="embedded.h">
+    <ClInclude Include="consumer.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="power_bank.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
