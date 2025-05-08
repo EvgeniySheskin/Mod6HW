@@ -3,7 +3,7 @@
 namespace mod6hw
 {
 	PortableDevice::PortableDevice(int weight, int capacity, int screenSize, string name)
-		: IElectronicDevice(name), _weight(weight), _capacity(capacity), _screenSize(screenSize) {}
+		: _modelName(name), _weight(weight), _capacity(capacity), _screenSize(screenSize) {}
 	string PortableDevice::GetInterface(DeviceInterface interface)
 	{
 		string output = "USB Type-C";
@@ -30,7 +30,7 @@ namespace mod6hw
 	}
 	string PortableDevice::GetSpec(bool showName)
 	{
-		string spec = IElectronicDevice::GetSpec(showName);
+		string spec = showName ? "Устройство: " + _modelName + "\n" : "";
 		spec += "Вес: " + to_string(_weight) + " г\n";
 		if (_screenSize != 0)
 		{
