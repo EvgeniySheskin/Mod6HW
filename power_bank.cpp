@@ -9,6 +9,7 @@ namespace mod6hw
     {
         string base = PortableDevice::GetSpec();
         base += "Интерфейс: " + PortableDevice::GetInterface(_interface) + "\n";
+        base += "Максимальный выходной ток: " + to_string(_outputCurrent) + " А\n";
         base += "\n";
         return base;
     }

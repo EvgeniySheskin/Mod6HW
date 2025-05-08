@@ -32,10 +32,10 @@ namespace mod6hw
 	{
 		string spec = "\n";
 		spec += "Устройство: " + _modelName + "\n";
-		spec += "Вес: " + to_string(_weight) + "\n";
+		spec += "Вес: " + to_string(_weight) + " г\n";
 		if (_screenSize != 0)
 		{
-			spec += "Размер экрана (дюйм): " + to_string(_screenSize) + "\n";
+			spec += "Размер экрана: " + to_string(_screenSize) + "\"\n";
 		}
 		return spec;
 	}
